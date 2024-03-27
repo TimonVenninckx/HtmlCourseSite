@@ -1,0 +1,44 @@
+section > div > ul{
+    padding-inline-start: 40px;
+    padding-block-end:20px;
+}
+
+div > h2{
+    font-size:2rem;
+    padding-block-end:15px;
+    color:var(--header-color);
+}
+
+p > a{
+    color:var(--header-color);
+}
+p > a:hover{
+    color:blue;
+}
+.text-with-image{
+    padding-block:30px;
+    gap:30px;
+}
+.text-with-image > img{
+    border-radius:10%;
+}
+
+.text-with-image:nth-of-type(even){
+    background-color:var(--background-color);
+}
+
+@media screen and (max-width:768px){
+    .text-with-image > img{
+        height:auto;
+        margin:auto;
+        display:block;
+        max-width:100%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .text-with-image{
+        display:flex;
+        flex-direction: row;
+    }
+}
